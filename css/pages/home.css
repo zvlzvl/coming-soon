@@ -7,6 +7,15 @@
 /*3rd party*/
 /*components*/
 /*CUSTOM STYLE*/
-body{
-   
+.logo{
+width: 50px;
+}
+
+.main-title{
+    font-size: 60px;
+    text-align: center;
+}
+.main-description{
+    text-align: center;
+
 }
