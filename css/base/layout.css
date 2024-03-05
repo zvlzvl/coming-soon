@@ -5,11 +5,6 @@
     padding: 60px 0px;
 }
 
-.container .row {
-    width: 1000px;
-    margin: 0px calc(50% - 500px);
-}
-
 .container .row-short {
     display: flex;
     flex-direction: column;
@@ -17,6 +12,21 @@
     gap: 20px;
     width: 600px;
     margin: 0px calc(50% - 300px);
+}
+.container .row {
+    display: flex;
+    /* justify-content: space-between; Geriau margin nes reikes footeryje*/ 
+    width: 1000px;
+    gap: 60px 0;
+    margin: 0px calc(50% - 500px);
+}
+
+.container .column {
+    width: 50%;
+   }
+.column.right-column {
+    width: 40%;
+    margin-left: auto;
 }
 
 @media (max-width: 1100px) {
@@ -38,7 +48,13 @@
     .container .row-short {
         width: 400px;
         margin: 0px calc(50% - 200px);
+        flex-wrap: wrap;
     }
+    .container .column,
+    .container .column.right-column {
+        width: 100%;
+        margin: 10px 0px 0px 0 ;
+       }
 }
 @media (max-width: 440px) {
     .container {
@@ -50,6 +66,5 @@
     .container .row,
     .container .row-short {
         width: 100%;
-        margin: 0;
     }
 }
