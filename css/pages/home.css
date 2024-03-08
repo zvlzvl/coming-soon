@@ -27,7 +27,7 @@ footer.container{
     display: flex;
     gap: 20px;
     font-size: 20px;
-    padding: 20px 0;
+    padding: 0.5em;
     margin-bottom: 40px;
     border-bottom: 2px solid white;
 }
@@ -39,6 +39,8 @@ footer.container{
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    transition: all 0.3s;
+
 }
 
 .row.socials a:hover{
