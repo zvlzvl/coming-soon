@@ -25,11 +25,11 @@ footer.container{
 }
 .row.socials {
     display: flex;
-    gap: 20px;
-    font-size: 20px;
-    padding: 0.5em;
-    margin-bottom: 40px;
-    border-bottom: 2px solid white;
+    gap: 0.5em;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid white;
 }
 .row.socials a{
     color: white;
@@ -39,12 +39,54 @@ footer.container{
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    transition: all 0.3s;
-
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .row.socials a:hover{
     color: #03a9f4;
     background-color: white;
-  
+}
+
+footer.container > .row-short {
+    gap: 0;
+    color: #fffb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+footer > .row-short a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p {
+    position: relative;
+}
+.text-trio > p::after {
+    content: '';
+    display: none;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -0.9rem;
+    transform: translateY(-50%);
+}
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7rem;
+    }
+    .text-trio > p::after {
+        display: block;
+    }
 }
