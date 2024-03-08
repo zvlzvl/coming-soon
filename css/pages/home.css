@@ -5,6 +5,7 @@
 @import '..base/variable.css';
 
 /*3rd party*/
+@import"../3rd-party/font-awesome.min.css";
 /*components*/
 /*CUSTOM STYLE*/
 .logo{
@@ -15,7 +16,77 @@ width: 50px;
     font-size: 60px;
     text-align: center;
 }
+
 .main-description{
     text-align: center;
+}
+footer.container{
+    padding-top: 0;
+}
+.row.socials {
+    display: flex;
+    gap: 0.5em;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid white;
+}
+.row.socials a{
+    color: white;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color 0.3s, background-color 0.3s;
+}
 
+.row.socials a:hover{
+    color: #03a9f4;
+    background-color: white;
+}
+
+footer.container > .row-short {
+    gap: 0;
+    color: #fffb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+footer > .row-short a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p {
+    position: relative;
+}
+.text-trio > p::after {
+    content: '';
+    display: none;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -0.9rem;
+    transform: translateY(-50%);
+}
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7rem;
+    }
+    .text-trio > p::after {
+        display: block;
+    }
 }
